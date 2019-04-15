@@ -1,11 +1,20 @@
 // 1.  Select the H1
-let heading = "replace with jquery"
+var heading = $('h1');
 console.log(heading)
 
 // 2.  Select all of the list items
-let listItems = "replace with jquery"
+var listItems = $('li');
 console.log(listItems)
 
 // 3.  Select only the last list item
-let listItem = "replace with jquery"
+var listItem = $('ul li').eq(2);
+
+/* or */
+
+var listItem = $('li').last();
+
+/* or */
+
+var listItem = $('li:nth-of-type(3)');
+
 console.log(listItem)
